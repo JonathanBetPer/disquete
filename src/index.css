@@ -1,3 +1,94 @@
-body {
-  background: #171717;
+:root{
+  --negro: #3f3f3f;
+  --rojo: #a83334;
+  --blanco: #ececec;
+  --gris: #afafaf;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disquete{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  border: 2px solid var(--negro);
+  box-shadow: 10px 10px 20px black;
+
+}
+
+.header{
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 125px;
+  width: 100%;
+  border: 2px solid var(--gris);
+  background-color: aquamarine;
+}
+
+.protector{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 100%;
+  width: 60%;
+  background-color: fuchsia;
+  border-radius: 0 0 10px 10px;
+}
+
+.ranura{
+  margin: 15px 30px;
+  height: 80%;
+  width: 25%;
+  background-color: yellow;
+
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  background-color: orange;
+  height: 275px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.pegatina{
+  height: 90%;
+  width: 75%;
+  background-color: var(--rojo);
+
+  h1{
+    color: var(--rojo);
+  }
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blanco);
+    width: 96%;
+
+  }
+
+  li{
+    list-style-type: none;
+
+    label{
+      border-bottom: 1px solid var(--rojo);
+    }
+  }
+
+}
+.hueco{}
