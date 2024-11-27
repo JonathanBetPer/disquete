@@ -20,6 +20,7 @@ body {
   border-radius: 10px;
   border: 2px solid var(--negro);
   box-shadow: 10px 10px 20px black;
+  background-color: var(--negro);
 
 }
 
@@ -30,8 +31,6 @@ body {
   align-items: center;
   height: 125px;
   width: 100%;
-  border: 2px solid var(--gris);
-  background-color: aquamarine;
 }
 
 .protector{
@@ -40,7 +39,7 @@ body {
   align-items: end;
   height: 100%;
   width: 60%;
-  background-color: fuchsia;
+  background: linear-gradient(0.25turn, var(--gris), var(--blanco), var(--gris));
   border-radius: 0 0 10px 10px;
 }
 
@@ -48,7 +47,7 @@ body {
   margin: 15px 30px;
   height: 80%;
   width: 25%;
-  background-color: yellow;
+  background-color: var(--negro);
 
 }
 
@@ -57,7 +56,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  background-color: orange;
   height: 275px;
   width: 100%;
   border-radius: 0 0 10px 10px;
@@ -68,27 +66,39 @@ body {
   height: 90%;
   width: 75%;
   background-color: var(--rojo);
+  border: 3px solid var(--rojo);
 
-  h1{
-    color: var(--rojo);
-  }
-
-  ul{
+  .lista{
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: var(--blanco);
-    width: 96%;
+    height: 93%;
+    width: 100%;
 
-  }
+    .renglon{
+      height: 16.5%;
+      width: 100%;
+      border-bottom: 2px solid var(--rojo);
 
-  li{
-    list-style-type: none;
-
-    label{
-      border-bottom: 1px solid var(--rojo);
+      h1{
+        color: var(--rojo);
+        font-size: small;
+        font-weight: bolder;
+        padding-top: 10px;
+        padding-left: 15px;
+      }
     }
   }
-
 }
-.hueco{}
+
+/*
+.piercing{
+  height: 20px;
+  width: 20px;
+  background-color: var(--blanco);
+  box-shadow: -10px -10px 20px black;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+  */
