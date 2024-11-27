@@ -41,6 +41,13 @@ body {
   width: 60%;
   background: linear-gradient(0.25turn, var(--gris), var(--blanco), var(--gris));
   border-radius: 0 0 10px 10px;
+  transition: all 1.5s;
+  transform: translateX(0);
+
+}
+
+.protector:hover{
+  transform: translateX(40px);
 }
 
 .ranura{
